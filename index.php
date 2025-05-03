@@ -1,22 +1,28 @@
-<?php  include_once './config/config.php'; ?>
-<?php 
-  if(!isset($_SESSION['userLogged'])){
-    header("Location: login.php");
-  }
-?>
 <!DOCTYPE html>
-<html lang="pt-br">
-  
-  <?php include_once './partials/head.php'; ?>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <navigation></navigation>
+    </header>
 
-  <body>    
+    <main>
+        <section>
+            <h1><?php echo "Em breve";?></h1>
+            <h1 class="titulo-destaque">Título</h1>
+            <img src="https://cdn.pixabay.com/photo/2021/01/21/11/09/tesla-5937063_1280.jpg" alt="">
+        </section>
+    </main>
 
-    <section>
-      <?php include_once './partials/menu.php'; ?>
+    <footer>
+        <div>
 
-      <?php include_once './pages/routes.php'; ?>
-    </section>
-    
-    <?php include_once './partials/scripts.php'; ?>
-  </body>
+        </div>
+    </footer>
+</body>
 </html>
