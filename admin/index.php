@@ -1,8 +1,7 @@
 <?php include_once './config/config.php'?>
 <?php
-  if(isset($_SESSION['userLogged'])== true){
-    //
-   }else{
+//Se usuário não estiver logado, ele será direcionado para o login.php
+  if(!isset($_SESSION['userLogged'])){
     header("Location: login.php");
    }
 ?>
